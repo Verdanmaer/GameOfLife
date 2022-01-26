@@ -1,0 +1,76 @@
+body {
+  background: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.description {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+}
+
+canvas {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  width: 1000px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper * {
+  flex: 1;
+  margin: 5px;
+  font-size: 24px;
+}
+
+.slider {
+  flex: 2;
+  height: 50px;
+  padding: 0 10px 0;
+  background: grey;
+  opacity: 0.6;
+  transition: opacity 0.4s;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 35px;
+  height: 35px;
+  background: black;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background: black;
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+#generationIndicator {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
