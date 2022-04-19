@@ -7,7 +7,7 @@ class DrawingApp {
                 y: e.clientY - this.rect.top + scrollY
             };
         };
-        this.tempFun = (e) => {
+        this.toggleCell = (e) => {
             let mousePosition = this.getMousePosition(e);
             let cellPositionX, cellPositionY;
             mousePosition.x = Math.floor(mousePosition.x / this.resolution) * this.resolution;
@@ -160,7 +160,7 @@ class DrawingApp {
     }
     createUserEvents() {
         var _a, _b, _c, _d, _e, _f;
-        (_a = this.canvas) === null || _a === void 0 ? void 0 : _a.addEventListener("click", this.tempFun);
+        (_a = this.canvas) === null || _a === void 0 ? void 0 : _a.addEventListener("click", this.toggleCell);
         (_b = this.btnNextGeneration) === null || _b === void 0 ? void 0 : _b.addEventListener("click", this.drawNextGeneration);
         (_c = this.btnClearBoard) === null || _c === void 0 ? void 0 : _c.addEventListener("click", this.clearBoard);
         (_d = this.btnRandomize) === null || _d === void 0 ? void 0 : _d.addEventListener("click", this.randomize);

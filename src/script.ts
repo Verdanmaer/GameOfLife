@@ -55,7 +55,7 @@ class DrawingApp {
   }
 
   private createUserEvents() {
-    this.canvas?.addEventListener("click", this.tempFun);
+    this.canvas?.addEventListener("click", this.toggleCell);
     this.btnNextGeneration?.addEventListener("click", this.drawNextGeneration);
     this.btnClearBoard?.addEventListener("click", this.clearBoard);
     this.btnRandomize?.addEventListener("click", this.randomize);
@@ -70,7 +70,7 @@ class DrawingApp {
     }
   }
 
-  private tempFun = (e: MouseEvent) => {
+  private toggleCell = (e: MouseEvent) => {
     let mousePosition = this.getMousePosition(e);
     let cellPositionX: number, cellPositionY: number;
     
