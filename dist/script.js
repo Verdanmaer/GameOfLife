@@ -3,8 +3,8 @@ class DrawingApp {
     constructor() {
         this.getMousePosition = (e) => {
             return {
-                x: e.clientX - this.rect.left,
-                y: e.clientY - this.rect.top
+                x: e.clientX - this.rect.left + scrollX,
+                y: e.clientY - this.rect.top + scrollY
             };
         };
         this.tempFun = (e) => {

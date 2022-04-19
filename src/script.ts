@@ -65,8 +65,8 @@ class DrawingApp {
 
   private getMousePosition = (e: MouseEvent) => {
     return {
-      x: e.clientX - this.rect.left,
-      y: e.clientY - this.rect.top
+      x: e.clientX - this.rect.left + scrollX,
+      y: e.clientY - this.rect.top + scrollY
     }
   }
 
