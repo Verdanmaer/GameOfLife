@@ -170,6 +170,7 @@ class DrawingApp {
       }
     }
     this.generationCount++;
+    document.getElementById("generation-count")!.innerHTML = this.generationCount.toString();
   }
 
   private fillCells = (i: number, j: number) => {

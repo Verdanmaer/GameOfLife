@@ -90,6 +90,7 @@ class DrawingApp {
                 }
             }
             this.generationCount++;
+            document.getElementById("generation-count").innerHTML = this.generationCount.toString();
         };
         this.fillCells = (i, j) => {
             if (this.oldGeneration[i][j] === 1) {
