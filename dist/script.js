@@ -124,6 +124,7 @@ class DrawingApp {
             }
         };
         this.simulate = () => {
+            this.framesPerSecond = parseInt(this.slider.value);
             this.generationInterval = setInterval(this.drawNextGeneration, 1000 / this.framesPerSecond);
             this.btnSimulate.disabled = true;
         };
