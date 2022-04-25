@@ -177,3 +177,6 @@ class DrawingApp {
     }
 }
 new DrawingApp();
+window.onbeforeunload = function () {
+    return window.scrollTo(0, 0);
+};
